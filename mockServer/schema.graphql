@@ -77,6 +77,7 @@ input LogInAccountInput {
 
 type LogInAccountPayload {
   account: Account
+  token: String
 }
 
 input UpdateAccountInput {
