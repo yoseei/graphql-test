@@ -1,11 +1,10 @@
-import React, { FC, Fragment } from "react";
-import SignInRouter from "scenes/SignIn/presentation/SignInRouter";
+import React, { Fragment } from "react";
+import styles from "scenes/SignIn/style.module.scss";
 
-// Configurator
-const SignIn: FC = () => {
+const SignIn = () => {
   return (
     <Fragment>
-      <SignInRouter />
+      <div className={styles.page}>signIn</div>
     </Fragment>
   );
 };

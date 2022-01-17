@@ -1,13 +1,12 @@
 import React, { FC, Fragment } from "react";
-import HomeRouter from "scenes/Home/presentation/HomeRouter";
-// Configurator
+import styles from "scenes/Home/style.module.scss";
 
-const HomeScene: FC = () => {
+const Home: FC = () => {
   return (
     <Fragment>
-      <HomeRouter />
+      <div className={styles.page}>home</div>
     </Fragment>
   );
 };
 
-export default HomeScene;
+export default Home;

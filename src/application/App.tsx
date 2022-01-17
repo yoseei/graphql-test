@@ -4,9 +4,9 @@ import client from "data/utilities/glaqhQLClient";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PrivateRoute from "scenes/PrivateRoute";
 import TopPage from "scenes/Top/presentation/TopPage";
-import HomePage from "scenes/Home/presentation/HomePage";
+import Home from "scenes/Home";
 import routes from "commons/constants/routes";
-import SignInPage from "scenes/SignIn/presentation/SignInPage";
+import SignIn from "scenes/SignIn";
 const AppContent: FC = () => {
   return (
     <Fragment>
@@ -16,11 +16,11 @@ const AppContent: FC = () => {
           path={routes.home()}
           element={
             <PrivateRoute>
-              <HomePage />
+              <Home />
             </PrivateRoute>
           }
         />
-        <Route path={routes.signIn()} element={<SignInPage />} />
+        <Route path={routes.signIn()} element={<SignIn />} />
       </Routes>
     </Fragment>
   );
