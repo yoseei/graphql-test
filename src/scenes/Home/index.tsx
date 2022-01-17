@@ -4,7 +4,7 @@ import React, { FC, Fragment } from "react";
 const HomeScene: FC = () => {
   return (
     <Fragment>
-      Home
+      Home test
     </Fragment>
   );
 };
