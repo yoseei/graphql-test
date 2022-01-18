@@ -146,6 +146,7 @@ export type LogInAccountInput = {
 export type LogInAccountPayload = {
   __typename?: 'LogInAccountPayload';
   account?: Maybe<Account>;
+  token?: Maybe<Scalars['String']>;
 };
 
 export type Mutation = {
