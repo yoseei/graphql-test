@@ -5,6 +5,7 @@ const Home: FC = () => {
   return (
     <Fragment>
       <div className={styles.page}>home</div>
+      test
     </Fragment>
   );
 };
